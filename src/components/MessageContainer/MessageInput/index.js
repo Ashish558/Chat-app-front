@@ -29,8 +29,8 @@ export default function MessageInput({ message, setMessage, roomId }) {
    }
 
    return (
-      <div className='mt-auto px-1 flex items-center'>
-         <input className='grow outline-0 block p-1 w-full text-gray-900 rounded-lg border border-gray-300 sm:text-xs mb-1'
+      <div className='mt-auto px-1 flex items-center fixed bottom-0 w-full mb-1'>
+         <input className='grow outline-0 block p-1 w-full text-gray-900 rounded-lg border border-gray-300 sm:text-xs'
             value={message}
             onChange={e => setMessage(e.target.value)}
          />
